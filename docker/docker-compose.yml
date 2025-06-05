@@ -1,0 +1,8 @@
+version: '3'
+services:
+  agent:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.agent
+    env_file:
+      - ../.env.example
